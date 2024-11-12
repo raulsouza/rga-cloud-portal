@@ -26,7 +26,7 @@ pipeline {
                 // sh 'terraform init'
             }
         }
-
+    }
 //        stage('Setup Terraform') {
 //            steps {
 //                // Install Terraform if needed (optional)
