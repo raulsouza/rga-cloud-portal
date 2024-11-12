@@ -9,12 +9,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from the Git repository
-                git branch: 'main', url: 'https://github.com/raulsouza/rga-cloud-portal.git'  // Replace with your repo URL
-            }
-        }
+        //stage('Checkout') {
+        //    steps {
+        //        // Checkout the code from the Git repository
+        //        git branch: 'main', url: 'https://github.com/raulsouza/rga-cloud-portal.git'  // Replace with your repo URL
+        //    }
+        //}
 
         stage('Setup Terraform') {
             steps {
