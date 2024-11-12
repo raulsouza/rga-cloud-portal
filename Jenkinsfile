@@ -13,7 +13,6 @@ pipeline {
             steps {
                 // Install Terraform if needed (optional)
                 sh '''
-                    whoami
                     if ! command -v terraform &> /dev/null; then
                         echo "Installing Terraform..."
                         wget https://releases.hashicorp.com/terraform/1.5.0/terraform_1.5.0_linux_amd64.zip
