@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GOOGLE_APPLICATION_CREDENTIALS = credentials('your-gcp-service-account')  // Replace with your Jenkins credential ID
+        GOOGLE_APPLICATION_CREDENTIALS = credentials('jenkins-sa')  // Replace with your Jenkins credential ID
         PROJECT_ID = "sacred-veld-441410-f8"  // Replace with your GCP Project ID
         REGION = "us-central1"
         TF_VAR_project_id = "${PROJECT_ID}" // Passing project ID as environment variable for Terraform
