@@ -11,15 +11,6 @@ pipeline {
     stages {
         stage('Setup Terraform') {
             steps {
-                // Install Terraform if needed (optional)
-                sh '''
-                    if ! command -v terraform &> /dev/null; then
-                        echo "Installing Terraform..."
-                        wget https://releases.hashicorp.com/terraform/1.5.0/terraform_1.5.0_linux_amd64.zip
-                        unzip terraform_1.5.0_linux_amd64.zip
-                        sudo mv terraform /usr/local/bin/
-                    fi
-                '''
                 // Initialize Terraform
                 sh 'terraform init'
             }
